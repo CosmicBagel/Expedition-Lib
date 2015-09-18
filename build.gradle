@@ -1,0 +1,17 @@
+// build.gradle
+apply plugin: 'cpp'
+
+model {
+    components {
+        main(NativeExecutableSpec) {
+			sources {
+				cpp {
+					source {
+						srcDir "src"
+						include "**/*.cpp"
+					}
+				}
+			}
+		}
+	}
+}
