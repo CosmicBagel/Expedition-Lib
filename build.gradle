@@ -1,7 +1,14 @@
 // build.gradle
 apply plugin: 'cpp'
+apply plugin: 'visual-studio'
 
 model {
+	toolChains {
+		gcc(Gcc) {
+			path "C:/Users/Samuel/Tools/MinGW/bin"
+		}
+	}
+
     components {
         main(NativeExecutableSpec) {
 			sources {
