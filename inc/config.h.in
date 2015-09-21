@@ -1,6 +1,0 @@
-#pragma once
-
-// the configured options and settings for Tutorial 
-// these are set by cmake
-#define VERSION_MAJOR @VERSION_MAJOR@
-#define VERSION_MINOR @VERSINO_MINOR@
