@@ -1,0 +1,3 @@
+SDL v2.0.3
+Built with VS2012
+DX June 2010 was needed to build :/
