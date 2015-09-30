@@ -44,6 +44,7 @@
     <LibraryPath>$(SolutionDir)middleware\sdl2\lib\;$(SolutionDir)middleware\sdl2_image\lib\;$(SolutionDir)middleware\sdl2_mixer\lib\;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\builds\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)\builds\$(Configuration)\tmp\</IntDir>
+    <SourcePath>C:\Users\Samuel\Desktop\SDL2-2.0.3\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -78,10 +79,15 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Color.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
