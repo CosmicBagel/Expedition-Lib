@@ -172,6 +172,8 @@ UpdateGame(SDL_Renderer * renderer) {
 
 	if (ballPos.y >= darea.h || ballPos.y <= 0)
 		ballVel.y *= -1;
+
+	//check ball & paddle collision
 }
 
 void
